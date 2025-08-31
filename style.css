@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
 }
 
 /* header */
@@ -35,9 +37,9 @@
 
 #header .navbar ul li a{
     text-decoration: none;
-    font-size: larger;
+    font-size: large;
     color: black;
-    font-weight: 800;
+    font-weight: 600;
     transition: .3 ease;
     position: relative;
 }
