@@ -10,6 +10,12 @@
 /* header */
 #header{
     background-color: #E3E6F3;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
 }
 #header-container {
   margin: 0 auto;
@@ -58,4 +64,91 @@
     left: 0;
     width: 40%;
     height: 10%;
+}
+
+.hero{
+    background-image:url(/img/hero4.png);
+    background-size: cover;
+    height: calc(100vh - 80px);
+    background-position: top 25% right 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 90px;
+    gap: 15px;
+}
+.hero h4{
+    font-size: 20px;
+}
+.hero h2,
+.hero h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+.hero h1{
+    color: #128178;
+}
+.hero h5{
+    color: #AEB1BD;
+    font-weight: 600;
+}
+.hero button{
+    color: #128178;
+    background-image: url(/img/button.png);
+    border: 0;  
+    background-color: transparent;
+    padding: 18px 85px;
+    background-repeat: no-repeat;
+    /* border-radius: 15px; */
+    background-size: cover;
+    font-size: large;
+    font-weight: 600;
+
+}
+
+.features{
+    margin: 50px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fe-box{
+    text-align: center;
+    width: 180px;
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    padding: 20px 10px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border-style: solid;
+}
+
+.fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70,62,221, 0.01);   
+}
+
+.fe-box p{
+    display: inline-block;
+    background-color: #fddde4;  
+    padding: 4px;
+    border-radius: 4px;
+    color: #088178;
+    font-weight: 500;
+}
+
+.features .fe-box:nth-child(2) p{
+    background-color: #cdebbc;
+}
+.features .fe-box:nth-child(3) p{
+    background-color: #d1e8f2;
+}
+.features .fe-box:nth-child(4) p{
+    background-color: #cdd4f8;
+}
+.features .fe-box:nth-child(5) p{
+    background-color: #f6dbf6;
+}
+.features .fe-box:nth-child(6) p{
+    background-color: #fff2e5;
 }
