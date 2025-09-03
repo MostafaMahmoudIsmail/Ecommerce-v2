@@ -44,7 +44,7 @@
   font-size: large;
   color: black;
   font-weight: 600;
-  transition: 0.3 ease;
+  transition: 0.3s ease;
   position: relative;
 }
 
@@ -240,7 +240,7 @@
   border-radius: 5px;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3 ease;
+  transition: 0.3s ease;
   border-color: transparent;
 }
 
@@ -257,97 +257,140 @@
   color: red;
 }
 
-
-.sm-banner{
-    margin: 0 80px;
-    margin-bottom: 100px;
+.sm-banner {
+  margin: 0 80px;
+  margin-bottom: 100px;
 }
-.sm-banner .row1{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.sm-banner .row1 div{
-    width: 48%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 20vw; 
-    margin-bottom: 80px;  
-    margin-top: 80px;
-    padding-top: 80px;
-    color: white;
-    /* border-radius: 15px; */    
-}
-.sm-banner .row1 .left{
-    background-image: url(/img/banner/b17.jpg);
+.sm-banner .row1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.sm-banner .row1 .right{
-    background-image: url(/img/banner/b10.jpg);   
+.sm-banner .row1 div {
+  width: 48%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20vw;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  padding-top: 80px;
+  color: white;
+  /* border-radius: 15px; */
+}
+.sm-banner .row1 .left {
+  background-image: url(/img/banner/b17.jpg);
 }
 
-.sm-banner .row1 div *{
-    text-align: left;
-    margin-left: 40px;
+.sm-banner .row1 .right {
+  background-image: url(/img/banner/b10.jpg);
 }
 
-.sm-banner .row1 div h4{
-    font-size: 33px;
-    margin: 10px 40px;
+.sm-banner .row1 div * {
+  text-align: left;
+  margin-left: 40px;
 }
 
-.sm-banner .row1 div p:nth-child(3){    
-    margin-bottom: 20px;
+.sm-banner .row1 div h4 {
+  font-size: 33px;
+  margin: 10px 40px;
 }
 
-.sm-banner .row1 div button{
-    padding: 10px 20px;
-    border-radius: 4px;
+.sm-banner .row1 div p:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+.sm-banner .row1 div button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
+}
+.sm-banner .row1 div:hover button {
+  background-color: #078175;
+}
+
+.row2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  height: 15vw;
+  width: 30%;
+  background-image: url(/img/banner/b7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 15px;
+}
+
+.banner-card * {
+  margin-bottom: 10px;
+}
+
+.banner-card h4 {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+
+.banner-card p {
+  color: rgb(228, 83, 83);
+}
+
+.banner-card:nth-child(2) {
+  background-image: url(/img/banner/b4.jpg);
+}
+
+.banner-card:nth-child(3) {
+  background-image: url(/img/banner/b18.jpg);
+}
+
+.newsletter {
+  height: 140px;
+  background-color: #081e3d;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+}
+.newsletter .left h4 {
+  font-size: 23px;
+  color: white;
+  margin-bottom: 10px;
+}
+.newsletter .left p {
+  color: #53627e;
+}
+
+.newsletter .right input {
+  border-color: transparent;
+  border-radius: 3px;
+  padding: 0;
+  /* size: 50px; */
+  outline: none;
+  font-size: 16px;
+  height: 50px;
+  width: 500px;
+}
+.newsletter .right input:focus{
     border-color: transparent;
-    cursor: pointer;
-}
-.sm-banner .row1 div:hover button{
-    background-color: #078175;
+    outline: none;
+    box-shadow: none;
 }
 
-.row2{
-    display: flex;
-    justify-content: space-between;
+.newsletter .right {
+  position: relative;
 }
-
-.banner-card{
-    display: flex;         
-    flex-direction: column;
-    justify-content: center;
-    align-items:baseline;    
-    height: 15vw;
-    width: 30%;
-    background-image: url(/img/banner/b7.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-left: 15px;
-}
-
-
-.banner-card *{
-    margin-bottom: 10px;
-}
-
-.banner-card h4{
-    font-size: 20px;
-    font-weight: 800;
-    color: white;
-}
-
-.banner-card p{
-    color: rgb(228, 83, 83);
-}
-
-.banner-card:nth-child(2){
-    background-image: url(/img/banner/b4.jpg);
-}
-
-.banner-card:nth-child(3){
-    background-image: url(/img/banner/b18.jpg);
+.newsletter .right button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 16px 20px;
+  border-radius: 0px 2px 3px 0px;
+  border-color: transparent;
+  background-color: #07665f;
 }
